@@ -5,20 +5,32 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       body {
-        margin: 20px;
-        display: flex;
-        justify-content: space-between;
+        height: 1000vh;
+        margin: 50px;
       }
-      div {
-        width: 50px;
-        height: 50px;
-        background-color: teal;
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border: 1px solid tomato;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
   </body>
 </html>

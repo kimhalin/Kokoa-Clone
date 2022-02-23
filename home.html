@@ -5,32 +5,33 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       body {
-        height: 1000vh;
-        margin: 50px;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 601px) and (max-width: 1200px) {
+        div {
+          background-color: wheat;
+        }
       }
       span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+        font-size: 36px;
       }
-      input {
-        border: 1px solid wheat;
-      }
-      input:required {
-        border: 1px solid tomato;
-      }
-      input[placeholder~="name"] {
-        background-color: pink;
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
-    <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <div></div>
+    <span>Please flip your phone :(</span>
   </body>
 </html>

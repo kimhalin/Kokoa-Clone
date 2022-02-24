@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 10px solid #00c6ad;
+}
+.top-bar {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.top-bar__column {
+  width: 33%;
+}
+.top-bar__quit {
+  margin-left: 20px;
+}
+
+.top-bar__title {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.album {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.description {
+  display: inline;
+}
+.title,
+.singer {
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+}
+.title {
+  font-weight: bold;
+}
+.playlist__first > .album {
+  background-color: tomato;
+}
+.playlist__second > .album {
+  background-color: #ff89bb;
+}
+.playlist__third > .album {
+  background-color: #1847e5;
+}
+.playlist__fourth > .album {
+  background-color: #00c6ad;
+}

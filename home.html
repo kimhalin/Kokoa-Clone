@@ -2,58 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width" />
     <title>You Are Awesome!</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <div class="top-bar__column">
-        <span class="top-bar__quit">X</span>
-      </div>
-      <div class="top-bar__column">
-        <span class="top-bar__title">Playlist</span>
-      </div>
-      <div class="top-bar__column"></div>
-    </div>
-    <!-- <div class="selected">
-      <span class="selected__album"></span>
-      <span class="selected__title"></span>
-      <span class="selected__singer"></span>
-    </div> -->
-    <div class="btn"></div>
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul class="playlist">
-      <li class="playlist__first">
-        <span class="album"></span>
-        <div class="description">
-          <span class="title">Matargasti</span>
-          <span class="singer">Mohit Chauhan</span>
+    <header>
+      <i class="fas fa-bars fa-2x menu"></i>
+      <h3>library</h3>
+      <i class="fas fa-cart-plus fa-2x shopping-cart"></i>
+    </header>
+    <form class="search-box">
+      <input name="search" type="text" placeholder="Search books...." />
+      <button class="btn__search"><i class="fas fa-search fa-lg"></i></button>
+    </form>
+    <main>
+      <h1>Book of the day</h1>
+      <section class="day-book">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/517X7gyfYHL._SX324_BO1,204,203,200_.jpg"
+        />
+        <div class="day-book__data">
+          <h3>No Fixed Abode</h3>
+          <h4>Journey Through</h4>
+          <h4 class="book_rating">⭐⭐⭐⭐⭐</h4>
+          <span class="day-book__genre">Journey</span>
+          <span class="day-book__genre">Biography</span>
+          <div class="btn">
+            <button class="btn__bookmark">
+              <i class="fas fa-bookmark fa-2x"></i>
+            </button>
+            <button class="btn__book-now">Book now</button>
+          </div>
         </div>
-      </li>
-      <li class="playlist__second">
-        <span class="album"></span>
-        <div class="description">
-          <span class="title">Attitude</span>
-          <span class="singer">Lewis OfMan • Attitude</span>
+      </section>
+      <h1>Top Adventures</h1>
+      <section class="top-adventure">
+        <img
+          src="https://image.yes24.com/momo/TopCate2343/MidCate006/234259264.jpg"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Thejunglebook_movieposter.jpg/220px-Thejunglebook_movieposter.jpg"
+        />
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/81-Q4oeHicL.jpg"
+        />
+      </section>
+      <h1>Popular authors</h1>
+      <section class="popular-authors">
+        <img
+          src="https://media.wired.com/photos/592747327034dc5f91bee1ee/master/pass/GeorgeRRMartin1.jpg"
+        />
+        <div class="day-book__data">
+          <h3 class="author-name">George Raymond Richard Martin</h3>
+          <h4>
+            Modern American science fiction writer, screenwriter, producer and
+            editor, winner of many literary awards.
+          </h4>
         </div>
-      </li>
-      <li class="playlist__third">
-        <span class="album"></span>
-        <div class="description">
-          <span class="title">Try Everything</span>
-          <span class="singer">Shakira • Zootopia</span>
-        </div>
-      </li>
-      <li class="playlist__fourth">
-        <span class="album"></span>
-        <div class="description">
-          <span class="title">Sunflower</span>
-          <span class="singer">Joseph Vincent • Sunflower</span>
-        </div>
-      </li>
-    </ul>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

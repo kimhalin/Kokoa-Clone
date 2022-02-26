@@ -1,63 +1,124 @@
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  border: 10px solid #00c6ad;
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #ffce33;
 }
-.top-bar {
-  margin-top: 40px;
+
+.menu {
+  position: absolute;
+  left: 15px;
+}
+
+.shopping-cart {
+  position: absolute;
+  right: 15px;
+}
+
+.search-box {
   display: flex;
   justify-content: center;
 }
-.top-bar__column {
-  width: 33%;
-}
-.top-bar__quit {
-  margin-left: 20px;
-}
 
-.top-bar__title {
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  list-style-type: none;
-  margin: 20px;
-}
-
-.album {
-  display: inline-block;
-  width: 50px;
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: white;
+  border-radius: 130px;
+  width: 95%;
   height: 50px;
-  border-radius: 10px;
-  border: 2px solid black;
+  position: absolute;
+  top: 100px;
+  padding: 0px 30px;
 }
-.description {
-  display: inline;
+
+input:focus {
+  outline: none;
 }
-.title,
-.singer {
-  display: inline-block;
+
+input::placeholder {
+  color: #dfdfdf;
+}
+
+button {
+  border: none;
+}
+
+.btn__search {
+  position: absolute;
+  right: 50px;
+  top: 120px;
+  background-color: white;
+  color: #dfdfdf;
+}
+
+main {
+  padding: 80px 40px;
+}
+
+section {
+  margin: 20px 0px;
+}
+
+img {
+  border-radius: 20px;
+  height: 200px;
+}
+
+.day-book,
+.popular-authors {
+  display: flex;
+}
+
+.day-book__data {
+  margin: 0px 20px;
+}
+
+.btn__bookmark {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 30px;
   position: relative;
-  bottom: 20px;
+  top: 5px;
+  background-color: #ffce33;
 }
-.title {
-  font-weight: bold;
+
+.btn__book-now {
+  font-size: 13px;
+  height: 40px;
+  width: 90px;
+  padding: 1px 2px;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  color: white;
 }
-.playlist__first > .album {
-  background-color: tomato;
+
+.day-book__genre {
+  background-color: rgba(223, 223, 223, 0.3);
 }
-.playlist__second > .album {
-  background-color: #ff89bb;
+
+h3,
+h4,
+span {
+  margin: 13px 5px;
+  margin-top: 0;
 }
-.playlist__third > .album {
-  background-color: #1847e5;
+
+h4 {
+  color: #dfdfdf;
 }
-.playlist__fourth > .album {
-  background-color: #00c6ad;
+
+.btn {
+  margin-top: 20px;
+}
+
+.author-name {
+  width: 200px;
 }

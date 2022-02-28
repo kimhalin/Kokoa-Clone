@@ -7,62 +7,83 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <i class="fas fa-bars fa-2x menu"></i>
-      <h3>library</h3>
-      <i class="fas fa-cart-plus fa-2x shopping-cart"></i>
-    </header>
-    <form class="search-box">
-      <input name="search" type="text" placeholder="Search books...." />
-      <button class="btn__search"><i class="fas fa-search fa-lg"></i></button>
-    </form>
-    <main>
-      <h1>Book of the day</h1>
-      <section class="day-book">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/517X7gyfYHL._SX324_BO1,204,203,200_.jpg"
-        />
-        <div class="day-book__data">
-          <h3>No Fixed Abode</h3>
-          <h4>Journey Through</h4>
-          <h4 class="book_rating">⭐⭐⭐⭐⭐</h4>
-          <span class="day-book__genre">Journey</span>
-          <span class="day-book__genre">Biography</span>
-          <div class="btn">
-            <button class="btn__bookmark">
-              <i class="fas fa-bookmark fa-2x"></i>
-            </button>
-            <button class="btn__book-now">Book now</button>
+    <div class="screen">
+      <div class="top-btn">
+        <i class="fas fa-arrow-left fa-lg"></i
+        ><i class="fas fa-search fa-lg"></i>
+      </div>
+      <div class="now-playing">
+        <img src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/082/427/538/82427538_1639109943289_1_600x600.JPG" class="now-playing__music-cover music-cover--circle"></img>
+        <h2 class="now-playing__singer">10cm</h2>
+        <h4 class="now-playing__genre grey">Acoustic, Ballad</h4>
+      </div>
+      <div class="middle-btn">
+        <button class="middle-btn__shuffle">Shuffle</button>
+        <button class="middle-btn__like"><i class="fas fa-heart fa-lg"></i>212,971</button>
+      </div>
+      <div class="playlist">
+        <div class="playlist__music-column">
+          <img src="https://image.bugsm.co.kr/album/images/1000/40688/4068832.jpg" class="playlist__music-column__album-cover">
+          <div class="playlist__music-column__info">
+            <h4 class="playlist__music-column__singer grey">BIBI</h4>
+            <h3 class="playlist__music-column__title">The reason why we had to break up</h3>
           </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
         </div>
-      </section>
-      <h1>Top Adventures</h1>
-      <section class="top-adventure">
-        <img
-          src="https://image.yes24.com/momo/TopCate2343/MidCate006/234259264.jpg"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Thejunglebook_movieposter.jpg/220px-Thejunglebook_movieposter.jpg"
-        />
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/81-Q4oeHicL.jpg"
-        />
-      </section>
-      <h1>Popular authors</h1>
-      <section class="popular-authors">
-        <img
-          src="https://media.wired.com/photos/592747327034dc5f91bee1ee/master/pass/GeorgeRRMartin1.jpg"
-        />
-        <div class="day-book__data">
-          <h3 class="author-name">George Raymond Richard Martin</h3>
-          <h4>
-            Modern American science fiction writer, screenwriter, producer and
-            editor, winner of many literary awards.
-          </h4>
-        </div>
-      </section>
-    </main>
+        <div class="playlist__music-column">
+          <img src="https://image.bugsm.co.kr/album/images/1000/40696/4069697.jpg" class="playlist__music-column__album-cover">
+          <div class="playlist__music-column__info">
 
+            <h4 class="playlist__music-column__singer grey">Lee SeungYoon</h4>
+            <h3 class="playlist__music-column__title">Hill tree.</h3>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="playlist__music-column">
+          <img src="https://image.bugsm.co.kr/album/images/1000/40693/4069371.jpg" class="playlist__music-column__album-cover">
+          <div class="playlist__music-column__info">
+
+            <h4 class="playlist__music-column__singer grey">V</h4>
+            <h3 class="playlist__music-column__title">Christmas Tree</h3>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+      </div>
+      <div class="control-bar">
+        <div class="playlist__music-column__info">
+          <h4 class="playlist__music-column__singer white">10cm</h4>
+          <h3 class="playlist__music-column__title white">Drawer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen">
+      <div class="top-btn">
+        <i class="fas fa-arrow-left fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+      </div>
+      <div class="now-playing">
+        <img src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/082/427/538/82427538_1639109943289_1_600x600.JPG" class="now-playing__music-cover music-cover--round-sqaure--lg"></img>
+        <h2 class="now-playing__title">Drawer</h2>
+        <h4 class="now-playing__singer grey">10cm</h4>
+      </div>
+      <div class="playing-time">
+        <h6 class="grey">2:50</h6>
+        <h6 class="grey">1:54</h6>
+      </div>
+      <div class="regenerative-bar">
+        <div class="regenerative-bar__played"></div>
+        <div class="regenerative-bar__playing"></div>
+        <div class="regenerative-bar__remaining"></div>
+      </div>
+      <!-- <div class="control-btn">
+        <i class="fas fa-rotate fa-lg"></i>
+        <i class="fas fa-forward-step"></i>
+        <i class="fas fa-circle-play"></i>
+        <i class="fas fa-backward-step"></i>
+        <i class="fas fa-shuffle"></i>
+      </div> -->
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
